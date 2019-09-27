@@ -73,6 +73,7 @@ app.get('/weather', (req, res) => {
                         summary: data.summary,
                         temperature: data.temperature,
                         precipProbability: data.precipProbability,
+                        windSpeed: data.currentWindSpeed,
                         address: location
                     })
                 }

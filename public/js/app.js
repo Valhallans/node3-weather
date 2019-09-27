@@ -18,7 +18,7 @@ weatherForm.addEventListener('submit', (event) => {
                 return 
             }
             messageOne.textContent = data.address
-            messageTwo.textContent = data.summary
+            messageTwo.textContent = data.summary + ' Current wind speed is: ' + data.windSpeed + 'km/s'
             console.log(data)
 
         })
